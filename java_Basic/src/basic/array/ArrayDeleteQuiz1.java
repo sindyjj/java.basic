@@ -23,16 +23,15 @@ public class ArrayDeleteQuiz1 {
 		 */
 		
 		
-//		for(int i=0; i < won.length-1; i++) {
-//			won[i] = won[i+1];
-//		}
-//		System.out.println(Arrays.toString(won));
-//
-//		
-//		String [] wons = new String[won.length-1];
-//		
-//		if()
+		for(int i=0; i < won.length-1; i++) {
+			won[i] = won[i+1];
+		}
+		System.out.println(Arrays.toString(won));
+
 		
+		String [] wons = new String[won.length-1];
+		
+	
 		while(true) {
 			
 			if(won.length == 0) {
