@@ -18,17 +18,50 @@ public abstract class HeadStore {
     4. 추상 클래스에 추상 메서드만을 선언할 필요는 없습니다.
      일반 멤버변수 및 메서드도 얼마든지 선언이 가능합니다.
     */
+//	public String name;
+//	
+//	public HeadStore() {
+//		System.out.println("HeadStore의 생성자!");
+//	}
+//	
+//	public abstract void orderApple();
+//	public abstract void orderBanana();
+//	public abstract void orderGrape();
+//	
+//	public void orderwaterMelon() {
+//		System.out.println("수박 주스의 가격은 4000원 입니다.");
+//	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public String name;
 	
 	public HeadStore() {
-		System.out.println("HeadStore의 생성자!");
+		System.out.println("HeadStore 의 생성자");
 	}
-	
 	public abstract void orderApple();
 	public abstract void orderBanana();
 	public abstract void orderGrape();
-	
 	public void orderwaterMelon() {
-		System.out.println("수박 주스의 가격은 4000원 입니다.");
+		System.out.println("수박주스의 가격은 5000원입니다.");
 	}
+	
 }

@@ -13,7 +13,7 @@ public class Warrior extends Player { //player 에 최상위 부모는 object다
 		this.rage = 30;
 	}
 	
-	public void rush(Player p) {
+	
 		  
 			 
 	
@@ -32,23 +32,24 @@ public class Warrior extends Player { //player 에 최상위 부모는 object다
     
     - main에서 객체를 생성한 후 호출하셔서 잘 적용됐는지 확인해 주세요.
     */
-		
-		System.out.printf("%s님이 %s님에게 돌진을 시전했습니다!\n"
-				,this.name,p.name);
-		int damage; String job;
-		if(p instanceof Warrior) {
-			damage = 10; job = "전사";
-		}else if(p instanceof Mage) {
-			damage = 20; job = "마법사";
-		}else {
-			damage = 15; job = "사냥꾼";
+		public void rush(Player p) {
+			int damage;
+			if(p instanceof Warrior) {
+				damage =10; 
+				
+			}else if(p instanceof Mage) {
+				damage =20;
+				
+			}else {
+				damage =15;
+			}
+			p.hp -=damage; 
+			System.out.printf("%s 가 %s에게 %d 를 주었습니다.\n"
+					,this.name,p.name,damage);
+			System.out.println("남은체력: " + p.hp);
 		}
+	
 		
-		p.hp -= damage;
-		System.out.printf("%s님(%s)이%d의 피해를 입었습니다.\n",p.name,job,damage);
-		System.out.printf("%s님의 남은 체력 : %d\n", p.name,p.hp);
-		
-	}
 	
 	void characterInfo() {
 		super.characterInfo();
